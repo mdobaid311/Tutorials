@@ -2,6 +2,7 @@
 A collection of useful javascript snippets
 
 ## Table of Contents
+- Map Object - Creates a javascript map object with key value pair
 - Map - we can use built in javascript map method to map key and value pairs
 - Reduce - we can use built in javascript reduce method to reduce key and value pairs
 - Filter - we can use built in javascript filter method to filter key and value pairs
