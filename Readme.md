@@ -1,4 +1,3 @@
-# Test Repo
-- added 1
-- added 2
-- added 3
+# Positioning
+
+- By default every element is positioned as static
