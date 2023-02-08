@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.parent {
+  background: #ccc;
+  position: relative;
+  height: 200vh;
+}
+
+.child {
+  color: white;
+  margin: 10px;
+  height: 100px;
+}
+
+.child-1 {
+  background: blue;
+  position: sticky;
+  top: 0px;
+}
+.child-2 {
+  background-color: #cb6a6a;
+}
+.child-3 {
+  background-color: #80bc68;
+}
+.child-4 {
+  background-color: #4ab4d7;
+  position: relative;
+}
+
+.sub-1 {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 20px;
+  background: #1cb141;
+}
+.sub-2 {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 20px;
+  background: #000;
+}
