@@ -4,4 +4,4 @@
 3. Javascript Atoms
 
 
-* * * Change branch to see the tutorial 
+** Change branch to see the tutorial **
