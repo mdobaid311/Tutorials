@@ -41,6 +41,37 @@ Object.assign(student, { name: "Obaid", age: 22, branch: "CSE" }); // This will 
 // console.log(Object.is(student, { name: "Obaid", age: 22 })); // Returns false if the objects are not the same
 
 const obj1 = { name: "Obaid", age: 22 };
-const obj2 = obj1
+const obj2 = obj1;
 // console.log(Object.is(obj1, obj2)); // Returns true because both objects are the same and has same reference
 
+function objectFun(obj) {
+  obj.name = "Obaid";
+  obj.age = 22;
+}
+
+let obj = { name: "John", age: 22 };
+
+objectFun(obj);
+
+// console.log(obj); // Returns {name: "Obaid", age: 22} because the object is passed by reference
+
+const module = {
+  x: 42,
+  getX: function () {
+    return this.x;
+  },
+};
+
+const unboundGetX = module.getX;
+//   console.log(unboundGetX()); // The function gets invoked at the global scope
+// Expected output: undefined
+
+const boundGetX = unboundGetX.bind(module);
+//   console.log(boundGetX());
+// Expected output: 42
+
+function fun(name) {
+  console.log(name);
+}
+
+fun.call(this, "obaid");

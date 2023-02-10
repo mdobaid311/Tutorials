@@ -46,5 +46,5 @@ const testVar = "test";
 // console.log(testVar.hasOwnProperty("test"));
 // console.log(obaid.hasOwnProperty("test"));
 
-console.log(Object.getOwnPropertyNames(obaid.__proto__));
+// console.log(Object.getOwnPropertyNames(obaid.__proto__));
 
