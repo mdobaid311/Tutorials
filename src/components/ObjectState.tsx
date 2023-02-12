@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 
 const ObjectState = () => {
-  const [person, setPerson] = useState({ name: "", age: 22 });
+  const [person, setPerson] = useState<{ name: string; age: number }>(
+    {} as { name: string; age: number }
+  );
 
   const handleLogin = () => {
     setPerson({ name: "Oscar", age: 32 });
@@ -15,7 +17,7 @@ const ObjectState = () => {
     <div>
       <button onClick={handleLogin}>Login</button>
       <button onClick={handleLogout}>Logout</button>
-      {person.name
+      {person?.name
         ? `Name: ${person.name} Age: ${person.age}`
         : "User logged out"}
     </div>
