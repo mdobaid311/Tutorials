@@ -1,8 +1,17 @@
-# Tutorials in branches
+# Typescript 
+# Project: typescript
 
-1. Box Model
-2. Positioning
-3. Javascript Atoms
-4. Typescript Atoms
+To run a typescript program enter 
+```
+tsc file_name
+``` 
 
-Change branch to see the tutorial
+To run it continously enter
+```
+tsc file_name -w
+``` 
+
+To run the javascript converted program of typescript enter 
+```
+node file_name
+```
