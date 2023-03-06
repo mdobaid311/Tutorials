@@ -14,10 +14,21 @@ import { ThemeContextProvider } from "./components/context/ThemeContext";
 import User from "./components/context/User";
 import { UserContextProvider } from "./components/context/UserContext";
 
+interface FormProps<T> {
+  values: T;
+  children: (values: T) => JSX.Element;
+}
+
+const Form = <T extends {}>({ values, children }: FormProps<T>) => {
+  return children(values);
+};
+
 function App() {
   return (
     <div className="App">
-      <Private isLoggedIn={true} component={Profile} />
+      <Form values={{ firstName: "mohammed", lastName: "obaid" }}>
+        {(values) => <div>{values.firstName + " " + values.lastName}</div>}
+      </Form>
     </div>
   );
 }
